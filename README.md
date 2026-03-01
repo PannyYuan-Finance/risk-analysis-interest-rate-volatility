@@ -118,4 +118,4 @@ Calculated institutional-style risk indicators:
 
 Panny Yuan  
 Economics | Risk Analytics | Quantitative Research  
-contact via email: zy3112@nyu.edu
+Contact: zy3112@nyu.edu
