@@ -1,4 +1,4 @@
-# Risk Analysis: Interest Rate Regimes & Equity Volatility
+# Risk Analytics Framework: Regime-Based Volatility & Tail Risk Monitoring
 
 📄 One-Page Risk Summary: [Download PDF](./reports/Interest_Rate_Equity_Volatility_Risk_Summary.pdf)
 
@@ -6,16 +6,17 @@
 
 ## Project Overview
 
-This project investigates how U.S. interest rate regimes impact equity market volatility and downside risk.
+This project builds a simplified market risk monitoring framework designed to evaluate equity volatility sensitivity under different interest rate regimes.
 
-Using daily data from FRED (2016–2026), the analysis evaluates:
+The objective is to simulate how a risk analytics team would:
 
-- Multi-horizon interest rate changes
-- Equity volatility sensitivity
-- Regime-dependent risk behavior
-- Tail risk exposure (VaR & CVaR)
+- Monitor rolling volatility
+- Detect regime shifts
+- Quantify tail risk exposure
+- Evaluate medium-term rate sensitivity
+- Report risk-adjusted performance metrics
 
-The objective is to replicate a simplified macro risk monitoring framework commonly used in risk management and asset management settings.
+The framework replicates core risk analytics functions commonly used in asset management and bank risk departments.
 
 ---
 
@@ -28,57 +29,48 @@ The objective is to replicate a simplified macro risk monitoring framework commo
 
 ---
 
-## Methodology
+## Risk Analytics Framework
 
-### 1️⃣ Return & Volatility Modeling
+### 1️⃣ Volatility Monitoring
 
-- Daily returns computed using percentage change
-- 30-day rolling volatility annualized via:
+- Daily return calculation
+- 30-day rolling annualized volatility
+- Rolling 60-day correlation tracking
 
-Volatility = Rolling Std × √252
-
----
-
-### 2️⃣ Multi-Horizon Rate Sensitivity Analysis
-
-Interest rate changes evaluated across:
-
-- 1-day
-- 5-day
-- 10-day
-- 21-day
-- 63-day
-- 126-day
-
-Finding:
-Medium-term horizons (21–63 days) show stronger correlation with equity volatility than short-term rate shocks.
+Purpose:
+To simulate daily volatility monitoring used in risk dashboards.
 
 ---
 
-### 3️⃣ Regime Classification (Tightening vs Easing)
+### 2️⃣ Regime Detection Model
 
-Regimes defined using 63-day yield trend:
+- 63-day yield trend classification
+- Tightening vs Easing identification
+- Statistical regime comparison (Welch t-test)
 
-- Tightening: 63-day yield change > 0
-- Easing: 63-day yield change < 0
-
-A Welch t-test was conducted to test volatility differences across regimes.
-
-Result:
-Volatility differs significantly across regimes (p < 0.01).
+Purpose:
+To assess regime-dependent volatility behavior.
 
 ---
 
-### 4️⃣ Core Risk Metrics
+### 3️⃣ Tail Risk Quantification
 
-Calculated institutional-style risk indicators:
-
-- Annualized Return
-- Annualized Volatility
-- Sharpe Ratio
-- Maximum Drawdown
 - Historical VaR (95%, 99%)
-- Conditional VaR (CVaR)
+- Conditional VaR (Expected Shortfall)
+- Maximum drawdown tracking
+
+Purpose:
+To evaluate downside exposure under stress scenarios.
+
+---
+
+### 4️⃣ Multi-Horizon Sensitivity Analysis
+
+- Rate change windows: 1d–126d
+- Correlation decay and sensitivity evaluation
+
+Purpose:
+To detect medium-term macro risk transmission effects.
 
 ### Key Results
 
@@ -89,12 +81,15 @@ Calculated institutional-style risk indicators:
 
 ---
 
-## Risk Insights
+## Risk Findings
 
-- Equity volatility exhibits clear macro regime dependency.
-- Medium-term yield trends have stronger predictive linkage to volatility.
+- Volatility exhibits statistically significant regime dependency (p < 0.01).
+- Medium-term rate movements (1–3 months) show stronger volatility sensitivity than short-term shocks.
 - Tail risk remains elevated during easing cycles.
-- Downside exposure during stress periods is substantial (MDD ~ -34%).
+- Maximum drawdown reached -33.9%, highlighting material downside exposure.
+- Risk-adjusted performance remains moderate (Sharpe ~0.78).
+
+The framework demonstrates how macro regime shifts impact portfolio-level risk metrics.
 
 ---
 
