@@ -118,4 +118,4 @@ Calculated institutional-style risk indicators:
 
 Panny Yuan  
 Economics | Risk Analytics | Quantitative Research  
-Seeking Risk Analyst roles in New York
+contact via email: zy3112@nyu.edu
