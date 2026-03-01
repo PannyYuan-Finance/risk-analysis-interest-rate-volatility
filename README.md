@@ -6,17 +6,17 @@
 
 ## Project Overview
 
-This project builds a simplified market risk monitoring framework designed to evaluate equity volatility sensitivity under different interest rate regimes.
+This project develops a portfolio analytics framework designed to evaluate how equity performance and volatility respond to different interest rate regimes.
 
-The objective is to simulate how a risk analytics team would:
+The objective is to simulate how an asset management team would:
 
-- Monitor rolling volatility
-- Detect regime shifts
-- Quantify tail risk exposure
-- Evaluate medium-term rate sensitivity
-- Report risk-adjusted performance metrics
+- Analyze performance trends under varying macro conditions
+- Identify regime-driven shifts in portfolio behavior
+- Assess risk-adjusted return metrics
+- Evaluate interest rate sensitivity across different time horizons
+- Translate quantitative findings into asset allocation and product positioning insights
 
-The framework replicates core risk analytics functions commonly used in asset management and bank risk departments.
+The framework reflects analytical tools commonly used in asset management to support portfolio strategy and client-facing investment narratives.
 
 ---
 
