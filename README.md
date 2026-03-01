@@ -110,3 +110,12 @@ Calculated institutional-style risk indicators:
 ---
 
 ## Project Structure
+
+
+---
+
+## Author
+
+Panny Yuan  
+Economics | Risk Analytics | Quantitative Research  
+Seeking Risk Analyst roles in New York
