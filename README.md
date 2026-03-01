@@ -110,7 +110,21 @@ Calculated institutional-style risk indicators:
 ---
 
 ## Project Structure
+This repository is organized to separate research code from executive reporting.
 
+```
+risk-analysis-interest-rate-volatility/
+│
+├── Interest_rate_volatility_analysis.ipynb
+│   └── Full analysis notebook (data download, modeling, regime testing, risk metrics)
+│
+├── README.md
+│   └── Project documentation and methodology overview
+│
+└── reports/
+    └── Interest_Rate_Equity_Volatility_Risk_Summary.pdf
+        └── Executive one-page summary
+```
 
 ---
 
